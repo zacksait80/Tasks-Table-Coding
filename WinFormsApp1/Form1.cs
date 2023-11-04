@@ -23,21 +23,20 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string txtName = textBox1.Text;
+            string txtName = textBox1.Text.Trim();
             string combex = comboBox1.SelectedItem.ToString();
+
+            if(listBox1.Items.Contains(txtName) || listBox2.Items.Contains(txtName)||listBox3.Items.Contains(txtName))
+            {
+                MessageBox.Show("This item already Saved");
+                return;
+            }
 
             if (txtName == "")
             {
                 MessageBox.Show("Enter the Name");
                 return;
             }
-
-            if (listBox1.Items.Contains(txtName) || listBox2.Items.Contains(txtName) || listBox3.Items.Contains(txtName))
-            {
-                MessageBox.Show("This Task Name already Saved ");
-                return;
-            }
-
 
             if (combex == "Finished")
             {
@@ -58,6 +57,7 @@ namespace WinFormsApp1
                 MessageBox.Show("Invalid Tesk Status");
             }
             textBox1.Clear();
+
         }
 
         private void label1_Click(object sender, EventArgs e)

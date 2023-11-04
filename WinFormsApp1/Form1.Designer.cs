@@ -77,6 +77,7 @@
             // comboBox1
             // 
             comboBox1.BackColor = SystemColors.Info;
+            comboBox1.Cursor = Cursors.Hand;
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Finished", "Pending", "in Progress" });
@@ -98,7 +99,6 @@
             // button1
             // 
             button1.BackColor = SystemColors.ActiveCaptionText;
-            button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ButtonHighlight;
             button1.Location = new Point(518, 399);

@@ -41,8 +41,7 @@ namespace WinFormsApp1
             if (combex == "Finished")
             {
                 listBox1.Items.Add(txtName);
-
-                //textBox1.Clear();
+                textBox1.Clear();
             }
             else if (combex == "Pending")
             {
@@ -56,7 +55,7 @@ namespace WinFormsApp1
             {
                 MessageBox.Show("Invalid Tesk Status");
             }
-            textBox1.Clear();
+            
 
         }
 
